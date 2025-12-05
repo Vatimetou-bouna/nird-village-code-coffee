@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Le Village NIRD</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Le Village NIRD</h1>
+    <p>Découvrez comment votre établissement peut résister aux Big Tech — mini-parcours ludique.</p>
+  </header>
+
+  <main id="village">
+    <section class="houses">
+      <article class="house" data-id="linux">
+        <h2>Maison Linux</h2>
+        <p>Découvrir le libre et l'installation simple.</p>
+        <button class="enter">Entrer</button>
+      </article>
+
+      <article class="house" data-id="materiel">
+        <h2>Recyclage & Matériel</h2>
+        <p>Prolonger la vie du matériel.</p>
+        <button class="enter">Entrer</button>
+      </article>
+
+      <article class="house" data-id="donnees">
+        <h2>Données souveraines</h2>
+        <p>Stocker en France / UE.</p>
+        <button class="enter">Entrer</button>
+      </article>
+
+      <article class="house" data-id="sobriete">
+        <h2>Sobriété numérique</h2>
+        <p>Réduire consommation et usages.</p>
+        <button class="enter">Entrer</button>
+      </article>
+
+      <article class="house" data-id="formation">
+        <h2>Formation & Communauté</h2>
+        <p>Former élèves et partage de compétences.</p>
+        <button class="enter">Entrer</button>
+      </article>
+    </section>
+
+    <aside id="progress">
+      <h3>Progression</h3>
+      <ul id="badges"></ul>
+    </aside>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="hidden" role="dialog" aria-modal="true">
+    <div class="modal-inner">
+      <button id="closeModal" aria-label="Fermer">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Licence : MIT pour le code — contenus sous CC-BY-SA</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
